@@ -55,6 +55,10 @@ app.get("*", function(req, res){
 	res.redirect("/");
 });
 
-app.listen(3000, function(){
-	console.log("WELCOME TO YELPCAMP SEVER");
+// app.listen(3000, function(){
+// 	console.log("WELCOME TO YELPCAMP SEVER");
+// });
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("YELPCAMP APP START!!");
 });
