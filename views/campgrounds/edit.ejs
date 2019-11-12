@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center;">Edit "<%=campground.name%>"</h1>
+		<div style="width: 35%; margin: 25px auto;"> <!-- chenge width of form input -->
+			<form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST">
+				<div class="form-group"> <!-- to give space between form input -->
+					<input class="form-control" type="text" placeholder="campground name" name="campground[name]" value="<%=campground.name%>">	
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="number" placeholder="price" name="campground[price]" value="<%=campground.price%>" min="0.01" step="0.01">	
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="image url" name="campground[image]" value="<%=campground.image%>">	
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" placeholder="description" name="campground[description]" value="<%=campground.description%>">	
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary btn-block">submit</button>
+				</div>
+				<a href="/campgrounds">Go Back</a>
+			</form>	
+		</div>
+	</div>
+</div>
+
+<% include ../partials/footer %>

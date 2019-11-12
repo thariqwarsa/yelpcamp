@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center;">Register</h1>
+		<div style="width: 35%; margin: 25px auto;"> <!-- chenge width of form input -->
+			<form method="POST" action="/register">
+				<div class="form-group"> <!-- to give space between form input -->
+					<input class="form-control" type="text" placeholder="username" name="username" >	
+				</div>	
+				<div class="form-group">
+					<input class="form-control" type="password" placeholder="password" name="password">	
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary btn-block">Signup</button>
+				</div>
+				<p>
+					Already have an account? <a href="/register">Login</a>
+				</p>
+			</form>	
+		</div>
+	</div>
+</div>
+
+<% include ./partials/footer %>
