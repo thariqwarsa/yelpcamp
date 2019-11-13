@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "node app.js"
+=======
+	"start": "node app.js"
+>>>>>>> 6602f16451d2d4eadb65763795e57598a39cd2ba
   },
   "author": "thariqW",
   "license": "ISC",

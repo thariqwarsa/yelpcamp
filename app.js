@@ -63,7 +63,7 @@ app.get("*", function(req, res){
 // 	console.log("YELPCAMP APP START!!");
 // });
 
-//HEROKU LISTEN CONFIG
+//HEROKU LISTEN CONFIIG
 app.listen(process.env.PORT, process.env.IP, function(){
    console.log("YELPCAMP APP START!!");
 });
