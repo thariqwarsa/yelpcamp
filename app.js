@@ -58,10 +58,12 @@ app.get("*", function(req, res){
 	res.redirect("/");
 });
 
+//MONGOOSE LISTEN CONFIG
 // app.listen(3000, function(){
-// 	console.log("WELCOME TO YELPCAMP SEVER");
+// 	console.log("YELPCAMP APP START!!");
 // });
 
+//HEROKU LISTEN CONFIG
 app.listen(process.env.PORT, process.env.IP, function(){
    console.log("YELPCAMP APP START!!");
 });
